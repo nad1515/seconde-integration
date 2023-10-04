@@ -79,15 +79,51 @@ h4 {
     color: brown;
     font-weight:bolder;
 }
-.photo {
-    flex-direction: ;
+
+
+@media screen and (min-width: 768px) {
+ h1 {
+    color: aqua;
+
+ }
+.photos {
+    display: flex;
+    justify-content: space-between;  
+   margin-bottom: 40px;
+}
+.liste, .galerie {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+h4 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.galerie {
+  /* width:45%; */
+  
+}
+nav {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-@media screen and(min-width: 768px) {
-
-
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 }
 
+nav li {
+    padding: 10px 80px;
+    white-space: nowrap;
+    margin: 0px;
+}
+main {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+}
 @media screen and(min-width: 1280px) {
     
 
