@@ -64,11 +64,9 @@ p {
     margin-right: 30px;
     margin-top: 20px;
     width:90% ;
+    padding-bottom: 20px;
+}
 
-}
-hr {
-    margin-top: 30px;
-}
 h3 {
     text-align: center;
 
@@ -77,20 +75,33 @@ h4 {
     color: brown;
     font-weight:bolder;
 }
+.block {
+    display: none;
+}
 
+/* ----------------------------------Version tablette-----------------------------  */
 
 @media screen and (min-width: 768px) {
+body {
+    background-color: rgb(226, 215, 215);
+}  
+header, main, footer, hr {
+    background-color: white;
+    margin-left: 45px;
+    margin-right: 45px;
+}  
  h1 {
-    color: aqua;
+    color: rgb(194, 19, 115);
 
  }
 .ligne {
-    border-top: 1px solid #000;
+    border-top: 1px solid #4ab2d1;
+
 }
-.photos {
+.block {
     display: flex;
     justify-content: space-between;  
-   margin-bottom: 40px;
+   
 }
 .liste, .galerie {
     margin-top: 20px;
@@ -101,35 +112,105 @@ h4 {
    
 }
 .ligne-horizontal {
-    border-bottom: 1px solid #a8ece9; 
-    b
+    border-bottom: 1px solid #4ab2d1; 
+    
 }
-.galerie {
-  /* width:45%; */
-  
-}
-nav {
-    margin-left: 50px;
-    margin-right: 50px;
+ nav {
+     margin-left: 100px;
+     margin-right: 100px;  
 }
 
 nav ul{
     display: flex;
     justify-content: center;
     list-style-type: none;
+   
 }
 
 nav li {
-    padding: 10px 80px;
+    padding: 10px 70px;
     white-space: nowrap;
     margin: 0px;
 }
-main {
-    margin-left: 45px;
-    margin-right: 45px;
+
+.vignettes, .sahara {
+    margin-top: 30px;
 }
+.vignettes {
+    width: 350px;
+    height: 300px;;
 }
-@media screen and(min-width: 1280px) {
-    
 
 }
+/* ----------------------------------Version PC-----------------------------  */
+
+@media screen and (min-width: 1280px) {
+
+body {
+    background-color: rgb(226, 215, 215); 
+
+}    
+main, header, footer {
+    width: 1280px;
+    margin:0px auto;
+
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1px;
+   
+
+}
+nav li {
+   
+    padding: 0px;
+    background-color: white;
+    margin: 0px 20px;
+    
+}
+.logo {
+    margin-left: 50px;
+    margin-right: 0px;
+}
+h1 {
+    margin-right: auto;
+    margin-left: 10px;
+}
+h2 {
+    margin-bottom: 20px;
+}
+h4 {
+    margin-left: 20px;
+}
+main {
+    display: flex;
+
+}
+.block {
+    display: inline;
+    padding-left: 50px;
+    margin-right: 30px;
+
+}
+.sahara {
+    margin-left:20px;
+    margin-bottom: 200px;
+
+}
+.vignettes {
+    width: 300px;
+}
+footer {
+    padding: 10px;
+
+}
+p {
+    margin-left:40px;
+}
+
+
+} 
+
